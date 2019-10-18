@@ -14,12 +14,15 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             nextScreen()
         }, 2000L)
-
     }
 
     private fun nextScreen() {
-        var intent = Intent(this, MainActivity::class.java)
+        var intent = Intent(this, PlayerActivity::class.java)
         startActivity(intent)
         this.finish()
     }
 }
+
+
+
+
